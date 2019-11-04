@@ -1,7 +1,3 @@
-// Shirokikh Violetta
-include "code/lab1-tdd-arabic-roman-arabicromanconverter"
-project(":code/lab1-tdd-arabic-roman-arabicromanconverter").name = "lab1-tdd-arabic-roman-arabicromanconverter-Model"
-
 // Bevzuk Anton
 include "code/bevzuk-anton"
 project(":code/bevzuk-anton").name = "bevzuk-anton-Model"
@@ -9,10 +5,6 @@ project(":code/bevzuk-anton").name = "bevzuk-anton-Model"
 // Korniakov Kirill, lab1
 include "code/korniakov-kirill-lab1"
 project(":code/korniakov-kirill-lab1").name = "korniakov-kirill-lab1-Model"
-
-// Zyrina Anna, lab1
-include "code/lab1-tdd-sorting"
-project(":code/lab1-tdd-sorting").name = "lab1-tdd-Sorting"
 
 // Korniakov Kirill, lab2-legacy
 include "code/korniakov-kirill-lab2-legacy/Model"
@@ -49,96 +41,3 @@ include "code/korniakov-kirill-lab3/View"
 project(":code/korniakov-kirill-lab3/View").name = "korniakov-kirill-lab3-View"
 include "code/korniakov-kirill-lab3/Infrastructure"
 project(":code/korniakov-kirill-lab3/Infrastructure").name = "korniakov-kirill-lab3-Infrastructure"
-
-// Алексеев Сергей
-include "code/gameoflife"
-project(":code/gameoflife").name = "GameOfLife-Model"
-// Антипин Никита
-// Ахмедов Саркар
-// Бевзюк Семен
-include "code/temperature-converter"
-project(":code/temperature-converter").name = "temperature-converter-Model"
-// Власов Антон
-// Гречухин Никита
-include "code/fractioncalculator"
-project(":code/fractioncalculator").name = "fractioncalculator"
-// Гришин Дмитрий
-// Зырина Анна
-// Кальянов Дмитрий
-// Карев Борис
-include "code/length-converter"
-project(":code/length-converter").name = "length-converter-Model"
-// Кильдишев Максим
-include "code/figures-volume-calculator"
-project(":code/figures-volume-calculator").name = "figures-volume-calculator-Model"
-// Киселева Ольга
-// Конева Александра
-include "code/numbers-in-words"
-project(":code/numbers-in-words").name = "numbers-in-words-Model"
-// Коневский Виталий
-include "code/deposit-calculator"
-project(":code/deposit-calculator").name = "deposit-calculator-Model"
-// Кочетова Дарья
-include "code/kochetova-dasha-lab1-matrix"
-project(":code/kochetova-dasha-lab1-matrix").name = "kochetova-dasha-lab1-matrix"
-// Красильников Михаил
-include "code/salary-calculator"
-project(":code/salary-calculator").name = "salary-calculator"
-// Краснов Александр
-// Куликов Александр
-// Кулыгина Юлия
-include "code/complex-number-calculator"
-project(":code/complex-number-calculator").name = "complex-number-calculator-model" 
-// Купцова Алеся
-// Кучков Иван
-// Лапин Артем
-include "code/quadratic-equasion"
-project(":code/quadratic-equasion").name = "quadratic-equasion-Model"
-// Лахтачев Ярослав
-// Миронова Анна
-include "code/statistics-calculation"
-project(":code/statistics-calculation").name = "statistics-calculation-Model"
-// Митрохин Никита
-include "code/queue"
-project(":code/queue").name = "queue-Model"
-// Нестеров Александр
-// Нечесанов Владимир
-// Овчарук Олег
-include "code/polynomialcalculator"
-project(":code/polynomialcalculator").name = "polynomialcalculator"
-// Петров Кирилл
-include "code/interpolationsearch"
-project(":code/interpolationsearch").name = "interpolationsearch"
-// Повеликин Ростислав
-include "code/red-black-tree"
-project(":code/red-black-tree").name = "red-black-tree-Model"
-// Попков Кирилл
-// Разин Вячеслав
-// Сизова Ксения
-include "code/binary-search"
-project(":code/binary-search").name = "binary-search-Model"
-// Симонян Вагинак
-include "code/students-performance"
-project(":code/students-performance").name = "students-performance-Model"
-// Смирнов Андрей
-include "code/dijkstra-algorithm"
-project(":code/dijkstra-algorithm").name = "dijkstra-algorithm-Model"
-// Смирнов Егор
-include "code/priority-queue"
-project(":code/priority-queue").name = "priority-queue"
-// Тамилина Дарья
-// Тягунов Владимир
-// Федорова Дарья
-// Федотов Андрей
-include "code/datastructure-set"
-project(":code/datastructure-set").name = "datastructure-set"
-// Широких Виолетта
-// Шульпин Степан
-include "code/mortgage-calculator"
-project(":code/mortgage-calculator").name = "mortgage-calculator-Model"
-// Шумихин Сергей
-include "code/binary-tree"
-project(":code/binary-tree").name = "binary-tree-Model"
-// Юферев Кирилл
-include "code/stack"
-project(":code/stack").name = "stack-Model"
