@@ -1,3 +1,7 @@
+// Lahathev Yaroslav
+include "code/lab1-tdd-triangle"
+project(":code/lab1-tdd-triangle").name = "lab1-tdd-triangle-Model"
+
 // Bevzuk Anton
 include "code/bevzuk-anton"
 project(":code/bevzuk-anton").name = "bevzuk-anton-Model"
