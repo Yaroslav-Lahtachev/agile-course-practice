@@ -2,7 +2,7 @@ package com.lahtachev.triangle;
 
 import org.junit.Test;
 
-import java.text.NumberFormat;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -12,12 +12,13 @@ import static org.junit.Assert.*;
 public class TriangleTests {
 
     private final double delta = 0.01;
-    private final NumberFormat numberFormat;
+    private final DecimalFormat numberFormat;
     private final Triangle testTriangle;
     private final Triangle testNegativeTriangle;
 
     public TriangleTests() {
-        this.numberFormat = NumberFormat.getInstance();
+        this.numberFormat = new DecimalFormat();
+        numberFormat.getDecimalFormatSymbols().setDecimalSeparator(',');
         numberFormat.setMaximumFractionDigits(2);
 
         this.testTriangle = new Triangle(
@@ -186,7 +187,7 @@ public class TriangleTests {
                 testNegativeTriangle.getPoint1(),
                 testNegativeTriangle.getPoint2(),
                 testNegativeTriangle.getPoint3());
-        assertEquals(expectedBisector, numberFormat.format(actualBisector));
+        assertEquals(expectedBisector, numberFormat.format(actualBisector)); //
     }
 
     @Test
@@ -208,7 +209,7 @@ public class TriangleTests {
                 testNegativeTriangle.getPoint1(),
                 testNegativeTriangle.getPoint2(),
                 testNegativeTriangle.getPoint3());
-        assertEquals(expectedMedian, numberFormat.format(actualMedian));
+        assertEquals(expectedMedian, numberFormat.format(actualMedian)); //
     }
 
     @Test
@@ -219,7 +220,7 @@ public class TriangleTests {
                 testTriangle.getPoint1(),
                 testTriangle.getPoint2(),
                 testTriangle.getPoint3());
-        assertEquals(expectedHeight, numberFormat.format(actualHeight));
+        assertEquals(expectedHeight, numberFormat.format(actualHeight)); //
     }
 
     @Test
@@ -242,7 +243,7 @@ public class TriangleTests {
         String[] actualCoordinates = {
                 numberFormat.format(centroid.getX()),
                 numberFormat.format(centroid.getY())};
-        assertArrayEquals(expectedCoordinates, actualCoordinates);
+        assertArrayEquals(expectedCoordinates, actualCoordinates); //
     }
 
     @Test
@@ -254,6 +255,6 @@ public class TriangleTests {
         String[] actualCoordinates = {
                 numberFormat.format(centroid.getX()),
                 numberFormat.format(centroid.getY())};
-        assertArrayEquals(expectedCoordinates, actualCoordinates);
+        assertArrayEquals(expectedCoordinates, actualCoordinates);  //
     }
 }
