@@ -3,6 +3,7 @@ package com.lahtachev.triangle;
 import org.junit.Test;
 
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,7 +19,9 @@ public class TriangleTests {
 
     public TriangleTests() {
         this.numberFormat = new DecimalFormat();
-        numberFormat.getDecimalFormatSymbols().setDecimalSeparator(',');
+        DecimalFormatSymbols decimalFormatSymbols = numberFormat.getDecimalFormatSymbols();
+        decimalFormatSymbols.setDecimalSeparator(',');
+        numberFormat.setDecimalFormatSymbols(decimalFormatSymbols);
         numberFormat.setMaximumFractionDigits(2);
 
         this.testTriangle = new Triangle(
