@@ -88,18 +88,18 @@ public class TriangleTests {
     @Test
     public void canGetSide() {
         double expectedSide = 1;
-        double actualSide = testTriangle.getSide(
-                testTriangle.getPoint1(),
-                testTriangle.getPoint2());
+        double actualSide = testTriangle.getSideLength(
+                testTriangle.getA(),
+                testTriangle.getB());
         assertEquals(expectedSide, actualSide, delta);
     }
 
     @Test
     public void canGetSideNegative() {
         double expectedSide = 3.6;
-        double actualSide = testNegativeTriangle.getSide(
-                testNegativeTriangle.getPoint1(),
-                testNegativeTriangle.getPoint2());
+        double actualSide = testNegativeTriangle.getSideLength(
+                testNegativeTriangle.getA(),
+                testNegativeTriangle.getB());
         assertEquals(expectedSide, actualSide, delta);
     }
 
@@ -134,8 +134,7 @@ public class TriangleTests {
 
         List angles = testTriangle.calculateAngles();
         List<String> actualAngles = new ArrayList<String>();
-        for (Object o
-                : angles) {
+        for (Object o : angles) {
             actualAngles.add(numberFormat.format(o));
         }
         assertEquals(expectedAngles, actualAngles);
@@ -148,8 +147,7 @@ public class TriangleTests {
 
         List angles = testNegativeTriangle.calculateAngles();
         List<String> actualAngles = new ArrayList<String>();
-        for (Object o
-                : angles) {
+        for (Object o : angles) {
             actualAngles.add(numberFormat.format(o));
         }
         assertEquals(expectedAngles, actualAngles);
@@ -172,68 +170,146 @@ public class TriangleTests {
     }
 
     @Test
-    public void canGetBisector() {
+    public void canGetBisectorA() {
         String expectedBisector = "0,71";
 
-        double actualBisector = testTriangle.getBisector(
-                testTriangle.getPoint1(),
-                testTriangle.getPoint2(),
-                testTriangle.getPoint3());
+        double actualBisector = testTriangle.getBisectorA();
         assertEquals(expectedBisector, numberFormat.format(actualBisector));
     }
 
     @Test
-    public void canGetBisectorNegative() {
-        String expectedBisector = "3,79";
+    public void canGetBisectorB() {
+        String expectedBisector = "1,08";
 
-        double actualBisector = testNegativeTriangle.getBisector(
-                testNegativeTriangle.getPoint1(),
-                testNegativeTriangle.getPoint2(),
-                testNegativeTriangle.getPoint3());
-        assertEquals(expectedBisector, numberFormat.format(actualBisector)); //
+        double actualBisector = testTriangle.getBisectorB();
+        assertEquals(expectedBisector, numberFormat.format(actualBisector));
     }
 
     @Test
-    public void canGetMedian() {
+    public void canGetBisectorC() {
+        String expectedBisector = "1,08";
+
+        double actualBisector = testTriangle.getBisectorC();
+        assertEquals(expectedBisector, numberFormat.format(actualBisector));
+    }
+
+    @Test
+    public void canGetBisectorANegative() {
+        String expectedBisector = "3,79";
+
+        double actualBisector = testNegativeTriangle.getBisectorA();
+        assertEquals(expectedBisector, numberFormat.format(actualBisector));
+    }
+
+    @Test
+    public void canGetBisectorBNegative() {
+        String expectedBisector = "1,29";
+
+        double actualBisector = testNegativeTriangle.getBisectorB();
+        assertEquals(expectedBisector, numberFormat.format(actualBisector));
+    }
+
+    @Test
+    public void canGetBisectorCNegative() {
+        String expectedBisector = "1,83";
+
+        double actualBisector = testNegativeTriangle.getBisectorC();
+        assertEquals(expectedBisector, numberFormat.format(actualBisector));
+    }
+
+    @Test
+    public void canGetMedianA() {
         String expectedMedian = "0,71";
 
-        double actualMedian = testTriangle.getMedian(
-                testTriangle.getPoint1(),
-                testTriangle.getPoint2(),
-                testTriangle.getPoint3());
+        double actualMedian = testTriangle.getMedianA();
         assertEquals(expectedMedian, numberFormat.format(actualMedian));
     }
 
     @Test
-    public void canGetMedianNegative() {
+    public void canGetMedianB() {
+        String expectedMedian = "1,12";
+
+        double actualMedian = testTriangle.getMedianB();
+        assertEquals(expectedMedian, numberFormat.format(actualMedian));
+    }
+
+    @Test
+    public void canGetMedianC() {
+        String expectedMedian = "1,12";
+
+        double actualMedian = testTriangle.getMedianC();
+        assertEquals(expectedMedian, numberFormat.format(actualMedian));
+    }
+
+    @Test
+    public void canGetMedianANegative() {
         String expectedMedian = "3,81";
 
-        double actualMedian = testNegativeTriangle.getMedian(
-                testNegativeTriangle.getPoint1(),
-                testNegativeTriangle.getPoint2(),
-                testNegativeTriangle.getPoint3());
-        assertEquals(expectedMedian, numberFormat.format(actualMedian)); //
+        double actualMedian = testNegativeTriangle.getMedianA();
+        assertEquals(expectedMedian, numberFormat.format(actualMedian));
     }
 
     @Test
-    public void canGetHeight() {
+    public void canGetMedianBNegative() {
+        String expectedMedian = "1,8";
+
+        double actualMedian = testNegativeTriangle.getMedianB();
+        assertEquals(expectedMedian, numberFormat.format(actualMedian));
+    }
+
+    @Test
+    public void canGetMedianCNegative() {
+        String expectedMedian = "2,5";
+
+        double actualMedian = testNegativeTriangle.getMedianC();
+        assertEquals(expectedMedian, numberFormat.format(actualMedian));
+    }
+
+    @Test
+    public void canGetHeightA() {
         String expectedHeight = "0,71";
 
-        double actualHeight = testTriangle.getHeight(
-                testTriangle.getPoint1(),
-                testTriangle.getPoint2(),
-                testTriangle.getPoint3());
-        assertEquals(expectedHeight, numberFormat.format(actualHeight)); //
+        double actualHeight = testTriangle.getHeightA();
+        assertEquals(expectedHeight, numberFormat.format(actualHeight));
     }
 
     @Test
-    public void canGetHeightNegative() {
+    public void canGetHeightB() {
+        String expectedHeight = "1";
+
+        double actualHeight = testTriangle.getHeightB();
+        assertEquals(expectedHeight, numberFormat.format(actualHeight));
+    }
+
+    @Test
+    public void canGetHeightC() {
+        String expectedHeight = "1";
+
+        double actualHeight = testTriangle.getHeightC();
+        assertEquals(expectedHeight, numberFormat.format(actualHeight));
+    }
+
+    @Test
+    public void canGetHeightANegative() {
         String expectedHeight = "3,54";
 
-        double actualHeight = testNegativeTriangle.getHeight(
-                testNegativeTriangle.getPoint1(),
-                testNegativeTriangle.getPoint2(),
-                testNegativeTriangle.getPoint3());
+        double actualHeight = testNegativeTriangle.getHeightA();
+        assertEquals(expectedHeight, numberFormat.format(actualHeight));
+    }
+
+    @Test
+    public void canGetHeightBNegative() {
+        String expectedHeight = "1,21";
+
+        double actualHeight = testNegativeTriangle.getHeightB();
+        assertEquals(expectedHeight, numberFormat.format(actualHeight));
+    }
+
+    @Test
+    public void canGetHeightCNegative() {
+        String expectedHeight = "1,39";
+
+        double actualHeight = testNegativeTriangle.getHeightC();
         assertEquals(expectedHeight, numberFormat.format(actualHeight));
     }
 
@@ -246,7 +322,7 @@ public class TriangleTests {
         String[] actualCoordinates = {
                 numberFormat.format(centroid.getX()),
                 numberFormat.format(centroid.getY())};
-        assertArrayEquals(expectedCoordinates, actualCoordinates); //
+        assertArrayEquals(expectedCoordinates, actualCoordinates);
     }
 
     @Test
@@ -258,6 +334,6 @@ public class TriangleTests {
         String[] actualCoordinates = {
                 numberFormat.format(centroid.getX()),
                 numberFormat.format(centroid.getY())};
-        assertArrayEquals(expectedCoordinates, actualCoordinates);  //
+        assertArrayEquals(expectedCoordinates, actualCoordinates);
     }
 }
