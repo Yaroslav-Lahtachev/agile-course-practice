@@ -170,14 +170,18 @@ public class Triangle {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Triangle)) return false;
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Triangle)) {
+            return false;
+        }
         Triangle triangle = (Triangle) o;
-        return sideNumber == triangle.sideNumber &&
-                Objects.equals(getA(), triangle.getA()) &&
-                Objects.equals(getB(), triangle.getB()) &&
-                Objects.equals(getC(), triangle.getC());
+        return sideNumber == triangle.sideNumber
+                && Objects.equals(getA(), triangle.getA())
+                && Objects.equals(getB(), triangle.getB())
+                && Objects.equals(getC(), triangle.getC());
     }
 
     @Override
