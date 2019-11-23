@@ -1,11 +1,3 @@
-// Shirokikh Violetta
-include "code/lab1-tdd-arabic-roman-arabicromanconverter"
-project(":code/lab1-tdd-arabic-roman-arabicromanconverter").name = "lab1-tdd-arabic-roman-arabicromanconverter-Model"
-
-// Lahathev Yaroslav
-include "code/lab1-tdd-triangle"
-project(":code/lab1-tdd-triangle").name = "lab1-tdd-triangle-Model"
-
 // Bevzuk Anton
 include "code/bevzuk-anton"
 project(":code/bevzuk-anton").name = "bevzuk-anton-Model"
@@ -13,10 +5,6 @@ project(":code/bevzuk-anton").name = "bevzuk-anton-Model"
 // Korniakov Kirill, lab1
 include "code/korniakov-kirill-lab1"
 project(":code/korniakov-kirill-lab1").name = "korniakov-kirill-lab1-Model"
-
-// Zyrina Anna, lab1
-include "code/lab1-tdd-sorting"
-project(":code/lab1-tdd-sorting").name = "lab1-tdd-Sorting"
 
 // Korniakov Kirill, lab2-legacy
 include "code/korniakov-kirill-lab2-legacy/Model"
@@ -66,6 +54,8 @@ include "code/fractioncalculator"
 project(":code/fractioncalculator").name = "fractioncalculator"
 // Гришин Дмитрий
 // Зырина Анна
+include "code/lab1-tdd-sorting"
+project(":code/lab1-tdd-sorting").name = "lab1-tdd-Sorting"
 // Кальянов Дмитрий
 // Карев Борис
 include "code/length-converter"
@@ -97,6 +87,8 @@ project(":code/complex-number-calculator").name = "complex-number-calculator-mod
 include "code/quadratic-equasion"
 project(":code/quadratic-equasion").name = "quadratic-equasion-Model"
 // Лахтачев Ярослав
+include "code/lab1-tdd-triangle"
+project(":code/lab1-tdd-triangle").name = "lab1-tdd-triangle-Model"
 // Миронова Анна
 include "code/statistics-calculation"
 project(":code/statistics-calculation").name = "statistics-calculation-Model"
@@ -133,6 +125,8 @@ project(":code/priority-queue").name = "priority-queue"
 include "code/datastructure-set"
 project(":code/datastructure-set").name = "datastructure-set"
 // Широких Виолетта
+include "code/lab1-tdd-arabic-roman-arabicromanconverter"
+project(":code/lab1-tdd-arabic-roman-arabicromanconverter").name = "lab1-tdd-arabic-roman-arabicromanconverter-Model"
 // Шульпин Степан
 include "code/mortgage-calculator"
 project(":code/mortgage-calculator").name = "mortgage-calculator-Model"
