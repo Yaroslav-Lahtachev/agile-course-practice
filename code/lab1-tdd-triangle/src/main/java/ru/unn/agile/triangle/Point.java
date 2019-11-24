@@ -1,4 +1,4 @@
-package com.lahtachev.triangle;
+package ru.unn.agile.triangle;
 
 import java.util.Objects;
 
