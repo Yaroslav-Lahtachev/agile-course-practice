@@ -1,6 +1,8 @@
 package com.lahtachev.triangle;
 
 import org.junit.Test;
+import ru.unn.agile.triangle.Point;
+import ru.unn.agile.triangle.Triangle;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
