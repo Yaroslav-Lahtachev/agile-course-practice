@@ -336,4 +336,5 @@ public class TriangleTests {
                 numberFormat.format(centroid.getY())};
         assertArrayEquals(expectedCoordinates, actualCoordinates);
     }
+
 }
