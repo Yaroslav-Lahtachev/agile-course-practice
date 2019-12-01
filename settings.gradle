@@ -43,6 +43,8 @@ include "code/korniakov-kirill-lab3/Infrastructure"
 project(":code/korniakov-kirill-lab3/Infrastructure").name = "korniakov-kirill-lab3-Infrastructure"
 
 // Алексеев Сергей
+include "code/gameoflife"
+project(":code/gameoflife").name = "GameOfLife-Model"
 // Антипин Никита
 // Ахмедов Саркар
 // Бевзюк Семен
@@ -80,7 +82,7 @@ project(":code/salary-calculator").name = "salary-calculator"
 // Куликов Александр
 // Кулыгина Юлия
 include "code/complex-number-calculator"
-project(":code/complex-number-calculator").name = "complex-number-calculator-model" 
+project(":code/complex-number-calculator").name = "complex-number-calculator-model"
 // Купцова Алеся
 // Кучков Иван
 // Лапин Артем
@@ -115,6 +117,8 @@ project(":code/binary-search").name = "binary-search-Model"
 include "code/students-performance"
 project(":code/students-performance").name = "students-performance-Model"
 // Смирнов Андрей
+include "code/dijkstra-algorithm"
+project(":code/dijkstra-algorithm").name = "dijkstra-algorithm-Model"
 // Смирнов Егор
 include "code/priority-queue"
 project(":code/priority-queue").name = "priority-queue"
@@ -131,6 +135,8 @@ project(":code/lab1-tdd-arabic-roman-arabicromanconverter").name = "lab1-tdd-ara
 include "code/mortgage-calculator"
 project(":code/mortgage-calculator").name = "mortgage-calculator-Model"
 // Шумихин Сергей
+include "code/binary-tree"
+project(":code/binary-tree").name = "binary-tree-Model"
 // Юферев Кирилл
 include "code/stack"
 project(":code/stack").name = "stack-Model"
